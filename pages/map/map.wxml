@@ -1,0 +1,10 @@
+<!--map.wxml-->
+<view class="map">
+  <view class="section">
+    <input bindinput="bindInput" placeholder="日程地点" focus="true" value="{{keywords}}"/>
+  </view>
+  <view bindtouchstart="bindSelect" data-keywords="{{i.name}}" data-location="{{i.location}}" class="text_box" wx:for="{{tips}}" wx:for-item="i">
+    <view class='suggestion'>{{i.name}}</view>
+     <view class='district'>{{i.district+i.address}}</view>
+  </view>
+</view>

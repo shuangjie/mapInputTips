@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="weui-flex map-component">
+  <!-- icon -->
+  <view class="box icon">
+    <image src="/images/icon/map.png"></image>
+  </view>
+  <!-- mapInput -->
+  <navigator url="/pages/map/map?keywords={{keywords}}" open-type="navigate" hover-class="other-navigator-hover">
+    <view class="box hd">
+      <view class="location-name" name="location-name">
+        <block wx:if="{{keywords == ''}}">
+        <!-- placeholder -->
+          <view class="placeholder">活动地点</view>
+        </block>
+        <block wx:else>
+        <!-- location-name -->
+          {{keywords}}
+        </block>
+      </view>
+    </view>
+  </navigator>
+
+
+</view>
