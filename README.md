@@ -1,6 +1,6 @@
 # mapInputTips
-**微信小程序 地址输入提示词**
-##
+**微信小程序 地址输入提示词**<br /><br />
+
 地图SDK用的是 <a href="http://lbs.amap.com/" target="_blank">高德地图</a><br />
 高德地图API KEY在 /libs/config.js 里修改<br />
 _如果觉得对你还有些帮助，顺手点一下`star`吧 (｡♥‿♥｡)_
